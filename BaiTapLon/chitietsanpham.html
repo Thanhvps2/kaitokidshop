@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cửa Hàng Bán Quần Áo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   
+    <link rel="icon" href="images/d53c7593-3c1b-437a-98bc-f71b44050b40.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/chitiet.css" />
+    
+    <link rel="stylesheet" href="/MenuThaXuong/SanPham.css" />
+    <link rel="stylesheet" href="/MenuThaXuong/TaiKhoan.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+    />
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  </head>
+  <body>
+   <!-- fix icon -->
+   <div class="fixed-icon">
+    <div class="icons phone">
+      <img
+        style="width: 44px; height: 44px; object-fit: contain"
+        src="//theme.hstatic.net/200000182297/1000887316/14/messenger_new.png?v=1908"
+        loading="lazy"
+      />
+    </div>
+    <div id="back-to-top" class="back-to-top" style="display: block">
+      <svg
+        class="svg-inline--fa fa-angle-up fa-w-10"
+        aria-hidden="true"
+        data-prefix="fas"
+        data-icon="angle-up"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 320 512"
+        data-fa-i2svg=""
+      >
+        <path
+          fill="currentColor"
+          d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+        ></path>
+      </svg>
+    </div>
+  </div>
+
+  <!-- <button onclick="topFunction()" id="myBtn"><i class="fas fa-angle-up"></i></button> -->
+  <section class="header-banner">
+    <div class="header-i-inner" id="hideInner">
+      <div class="header-text">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Hệ thống showroom</a>
+      </div>
+      <div class="contact-info">
+        <a href="https://zalo.me/0906264126">
+          <i class="fa-solid fa-phone"></i> Liên hệ Hỗ Trợ Zalo :
+          0906264126</a
+        >
+      </div>
+    </div>
+  </section>
+  <section class="header-menu">
+    <div class="menu">
+      <!-- Logo trái -->
+      <div class="logo">
+        <a href="index.html"><img src="/images/logokaitokid.png" alt="logo" /></a>
+      </div>
+      <div class="menu-icons">
+        <a href="GioHang.html" class="icon"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <div class="mobile-toggle" id="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div class="menu-1">
+        <ul>
+          <li class="dropdown">
+            <a href="allsp.html">Sản Phẩm <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown">
+                <a href="#">Áo sơ mi & Áo kiểu <i class="fa fa-angle-right"></i></a>
+                <ul class="dropdown-submenu">
+                  <li><a href="#">Ngắn tay</a></li>
+                  <li><a href="#">Tay lỡ</a></li>
+                  <li><a href="#">Dài tay</a></li>
+                </ul>
+              </li>
+              <li><a href="samphammoi.html">Áo Phông</a></li>
+              <li><a href="#">Áo Len</a></li>
+              <li><a href="#">Áo Dài</a></li>
+              <li class="dropdown"><a href="#"> Đầm <i class="fa fa-angle-right"></i></a>
+              <ul class="dropdown-submenu">
+                <li><a href="#">Đầm suông</a></li>
+                  <li><a href="#">Đầm dáng A</a></li>
+                  <li><a href="#">Đầm ôm</a></li>
+              </ul>
+            </li>
+              <li><a href="#">Áo Khoác</a></li>
+              <li class="dropdown"><a href="#">Chân Váy <i class="fa fa-angle-right"></i></a>
+                <ul class="dropdown-submenu">
+                  <li><a href="#">Chân Váy Xếp Li</a></li>
+                    <li><a href="#">Chân Váy Chữ A</a></li>
+                    <li><a href="#">Chân Váy Bút Chì</a></li>
+                </ul></li>
+              <li><a href="#">Quần</a></li>
+              <li><a href="#">Set Bộ</a></li>
+              <li><a href="#">Phụ Kiện</a></li>
+            </ul>
+          </li>
+  
+          <li><a href="samphammoi.html">Sản Phẩm Mới</a></li>
+          <li><a href="samphamgiatot.html">Sản Phẩm Giá Tốt</a></li>
+  
+          <li class="dropdown">
+            <a href="samphamsale.html">Sản Phẩm Sale <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Sale 50%</a></li>
+              <li><a href="#">Chỉ 199K</a></li>
+            </ul>
+          </li>
+  
+          <li class="dropdown">
+            <a href="bosuutap.html">Bộ Sưu Tập <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Hot Năm 2020</a></li>
+              <li><a href="#">Hot Năm 2021</a></li>
+              <li><a href="#">Hot Năm 2022</a></li>
+              <li><a href="#">Hot Năm 2023</a></li>
+              <li><a href="#">Hot Năm 2024</a></li>
+              <li><a href="#">Hot Năm 2025</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="search">
+        <input type="text" class="input" placeholder="Search..." />
+        <button class="btn">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+  
+      <div class="user-actions">
+        <ul>
+          <li class="dropdown">
+            <a href="#"><i class="fa fa-user"></i> Tài khoản</a>
+            <ul class="dropdown-menu">
+              <li><a href="login.html">Đăng Nhập</a></li>
+              <li><a href="login.html">Đăng Ký</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="cart" style="position: relative;">
+          <a href="GioHang.html">
+            <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng
+            <span id="cart-count" class="cart-count">0</span>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  </section>
+  
+  </div>
+  <script src="/javascript/animation.js"></script> 
+<!-- HTML Breadcrumb -->
+<nav class="breadcrumb">
+  <a href="index.html">TRANG CHỦ</a> /
+  <a href="allsp.html">TẤT CẢ SẢN PHẨM</a> /
+  <span>ĐẦM THIẾT KẾ D16442</span>
+  <!-- <a href="setbohoa.html">SET BỘ HOA</a> /
+  <span>HW18352</span> -->
+</nav>
+  <div class="product-container">
+    <div class="product-images">
+      <img src="/images/ChiTietSanPham/1.webp" alt="Áo khoác" class="main-image"/>
+      <div class="thumbnail-list">
+        <img src="images/ChiTietSanPham/2.webp" alt="thumb" />
+        <img src="images/ChiTietSanPham/3.jpg" alt="thumb" />
+        <img src="images/ChiTietSanPham/4.webp" alt="thumb" />
+        <img src="/images/ChiTietSanPham/1.webp" alt="thumb" />
+      </div>
+    </div>
+    
+    <div class="product-details">
+      <h1>ĐẦM THIẾT KẾ D16442</h1>
+      
+      <div class="price-box">
+        <span class="sale-price">1,599,000₫
+        </span>
+        <span class="old-price">1,999,999₫</span>
+        <span class="discount">-28%</span>
+      </div>
+
+      <p class="status">Tình trạng: <strong>Còn hàng</strong></p>
+
+      <div class="highlight">
+        <h3>Điểm nổi bật:</h3>
+        <ul>
+          <li>Chất liệu: vải thô
+          </li>
+          <li>Kiểu dáng: đầm thiết kế dáng ôm dài qua gối, tone màu xám phối cổ trắng</li>
+          <li>Sản phẩm thuộc dòng sản phẩm: NEM NEW 
+          </li>
+          <li>Thông tin người mẫu: mặc sản phẩm size 2</li>
+          <li>Màu: Đen / Rêu</li>
+        </ul>
+        <p>** Sản phẩm hiện có tại Website, Facebook và hệ thống cửa hàng 4MEN toàn quốc.</p>
+      </div>
+
+      <div class="select-group">
+        <div class="select-item">
+          <label>Size*</label>
+          <select>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+        </div>
+        <div class="select-item">
+          <label>Số lượng*</label>
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+      </div>
+      <div class="button-group">
+        <a href="#" class="a-them"
+          data-id="SP9"
+          data-name="ĐẦM THIẾT KẾ D16442"
+          data-price="1599000"
+          data-img="/images/ChiTietSanPham/1.webp">
+          <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Mua Ngay</button>
+          <button class="add-btn">+ Thêm vào giỏ hàng</button>
+        </a>
+       
+      </div>
+      <!-- <div class="button-group">
+        <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Mua Ngay</button>
+        <button class="add-btn">+ Thêm vào giỏ hàng</button>
+      </div> -->
+
+     
+    </div>
+  </div>
+  <script src="JS/btn_sp.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".a-them").forEach(btn => {
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const id = this.dataset.id;
+          const name = this.dataset.name;
+          const price = this.dataset.price;
+          const imgSrc = this.dataset.img;
+
+          let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+          const index = cart.findIndex(item => item.id === id);
+          if (index > -1) {
+            cart[index].quantity += 1;
+          } else {
+            cart.push({ id, name, price, imgSrc, quantity: 1 });
+          }
+
+          localStorage.setItem("cart", JSON.stringify(cart));
+          alert("✅ Đã thêm sản phẩm vào giỏ hàng!");
+        });
+      });
+    });
+  </script>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Giới thiệu</h3>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Liên hệ</a>
+        <a href="#">Tuyển dụng</a>
+        <a href="#">Tin tức</a>
+        <p>Email : kaitokid@gmail.com</p>
+        <span>Hotline : 0906264126</span>
+      </div>
+
+      <div class="footer-column">
+        <h3>Hỗ trợ khách hàng</h3>
+        <a href="#">Hướng dẫn đặt hàng</a>
+        <a href="#">Hướng dẫn chọn size</a>
+        <a href="#">Câu hỏi thường gặp</a>
+        <a href="#">Chính sách khách hàng VIP</a>
+        <a href="#">Thanh toán - Giao hàng</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Hệ thống cửa hàng</h3>
+        <div id="map"></div>
+        <!-- You can integrate a map here -->
+        <a href="#">Tìm địa chỉ cửa hàng gần bạn</a>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29814.440691130083!2d106.1463321!3d20.920160099999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a29bd88fe4d3%3A0xae2d7685eca0b553!2zQ-G6p3UgU-G6t3Q!5e0!3m2!1svi!2s!4v1740448302515!5m2!1svi!2s"
+          style="width: 80%; height: 150px"
+        ></iframe>
+      </div>
+
+      <div class="footer-column">
+        <h3>Kết nối với Kaito Kid Shop</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com/KaitooKidd.1412" target="_blank">
+            <i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/@Kuroba_Kaito_GM" target="_blank">
+            <i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="https://www.tiktok.com/@kurobaa_kaitoo" target="_blank">
+            <i class="fa-brands fa-tiktok"></i
+          ></a>
+          <a href="https://www.instagram.com/kaitoo.kidd1412" target="_blank">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <h3>Đăng ký nhận email khuyến mãi</h3>
+    <div class="newsletter">
+      <input type="email" placeholder="Email của bạn" />
+      <button type="button">Đăng ký</button>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.getElementById("mobile-toggle");
+      const menu = document.querySelector(".menu-1");
+  
+      toggleButton.addEventListener("click", function () {
+        menu.classList.toggle("active");
+      });
+    });
+  </script>
+  
+
+
+  <!-- đếm số lg -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      let totalItems = 0;
+      cart.forEach(item => {
+        totalItems += item.quantity;
+      });
+  
+      const countElement = document.getElementById("cart-count");
+      if (totalItems > 0) {
+        countElement.textContent = totalItems;
+      } else {
+        countElement.style.display = "none"; // Ẩn nếu không có sản phẩm
+      }
+    });
+  </script>
+  
+</body>
+</html>

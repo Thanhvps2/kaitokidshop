@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng Nhập &amp; Đăng kí</title>
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Đăng Nhập</div>
+        <div class="title signup">Đăng Kí</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked />
+          <input type="radio" name="slide" id="signup" />
+          <label for="login" class="slide login">Đăng Nhập</label>
+          <label for="signup" class="slide signup">Đăng Kí</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form action="index.html" class="login">
+            <div class="field">
+              <input type="text" placeholder="Tài Khoản" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Mật Khẩu" required />
+            </div>
+            <div class="pass-link"><a href="#">Quên Mật Khẩu?</a></div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Đăng Nhập" />
+            </div>
+            <div class="signup-link">
+              Chưa có tài khoản? <a href="#">Đăng kí ngay</a>
+            </div>
+          </form>
+          <form action="#" class="signup">
+            <div class="field">
+              <input type="text" placeholder="Email" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Mật Khẩu" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Nhập lại mật khẩu" required />
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Đăng kí" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+    <script src="/javascript/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cửa Hàng Bán Quần Áo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   
+    <link rel="icon" href="images/d53c7593-3c1b-437a-98bc-f71b44050b40.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/SanPhamBanChay.css" />
+    <link rel="stylesheet" href="/css/SanPhamMoi.css" />
+    <link rel="stylesheet" href="/css/SanPhamSale.css" />
+    <link rel="stylesheet" href="/MenuThaXuong/SanPham.css" />
+    <link rel="stylesheet" href="/MenuThaXuong/TaiKhoan.css" />
+    <link rel="stylesheet" href="/css/GoiYDanhChoBan.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- <script
+    src="https://kit.fontawesome.com/e06076012c.js"
+    crossorigin="anonymous"
+  ></script> -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  </head>
+  <body>
+    <!-- fix icon -->
+    <div class="fixed-icon">
+      <div class="icons phone">
+        <img
+          style="width: 44px; height: 44px; object-fit: contain"
+          src="//theme.hstatic.net/200000182297/1000887316/14/messenger_new.png?v=1908"
+          loading="lazy"
+        />
+      </div>
+      <div id="back-to-top" class="back-to-top" style="display: block">
+        <svg
+          class="svg-inline--fa fa-angle-up fa-w-10"
+          aria-hidden="true"
+          data-prefix="fas"
+          data-icon="angle-up"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+          data-fa-i2svg=""
+        >
+          <path
+            fill="currentColor"
+            d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- <button onclick="topFunction()" id="myBtn"><i class="fas fa-angle-up"></i></button> -->
+    <section class="header-banner">
+      <div class="header-i-inner" id="hideInner">
+        <div class="header-text">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Hệ thống showroom</a>
+        </div>
+        <div class="contact-info">
+          <a href="https://zalo.me/0906264126">
+            <i class="fa-solid fa-phone"></i> Liên hệ Hỗ Trợ Zalo :
+            0906264126</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="header-menu">
+      <div class="menu">
+        <!-- Logo trái -->
+        <div class="logo">
+          <a href="index.html"><img src="/images/logokaitokid.png" alt="logo" /></a>
+        </div>
+        <div class="menu-icons">
+          <a href="GioHang.html" class="icon"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="#" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <div class="mobile-toggle" id="mobile-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div class="menu-1">
+          <ul>
+            <li class="dropdown">
+              <a href="allsp.html">Sản Phẩm <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown">
+                  <a href="#">Áo sơ mi & Áo kiểu <i class="fa fa-angle-right"></i></a>
+                  <ul class="dropdown-submenu">
+                    <li><a href="#">Ngắn tay</a></li>
+                    <li><a href="#">Tay lỡ</a></li>
+                    <li><a href="#">Dài tay</a></li>
+                  </ul>
+                </li>
+                <li><a href="samphammoi.html">Áo Phông</a></li>
+                <li><a href="#">Áo Len</a></li>
+                <li><a href="#">Áo Dài</a></li>
+                <li class="dropdown"><a href="#"> Đầm <i class="fa fa-angle-right"></i></a>
+                <ul class="dropdown-submenu">
+                  <li><a href="#">Đầm suông</a></li>
+                    <li><a href="#">Đầm dáng A</a></li>
+                    <li><a href="#">Đầm ôm</a></li>
+                </ul>
+              </li>
+                <li><a href="#">Áo Khoác</a></li>
+                <li class="dropdown"><a href="#">Chân Váy <i class="fa fa-angle-right"></i></a>
+                  <ul class="dropdown-submenu">
+                    <li><a href="#">Chân Váy Xếp Li</a></li>
+                      <li><a href="#">Chân Váy Chữ A</a></li>
+                      <li><a href="#">Chân Váy Bút Chì</a></li>
+                  </ul></li>
+                <li><a href="#">Quần</a></li>
+                <li><a href="#">Set Bộ</a></li>
+                <li><a href="#">Phụ Kiện</a></li>
+              </ul>
+            </li>
+    
+            <li><a href="samphammoi.html">Sản Phẩm Mới</a></li>
+            <li><a href="samphamgiatot.html">Sản Phẩm Giá Tốt</a></li>
+    
+            <li class="dropdown">
+              <a href="samphamsale.html">Sản Phẩm Sale <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Sale 50%</a></li>
+                <li><a href="#">Chỉ 199K</a></li>
+              </ul>
+            </li>
+    
+            <li class="dropdown">
+              <a href="bosuutap.html">Bộ Sưu Tập <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Hot Năm 2020</a></li>
+                <li><a href="#">Hot Năm 2021</a></li>
+                <li><a href="#">Hot Năm 2022</a></li>
+                <li><a href="#">Hot Năm 2023</a></li>
+                <li><a href="#">Hot Năm 2024</a></li>
+                <li><a href="#">Hot Năm 2025</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="search">
+          <input type="text" class="input" placeholder="Search..." />
+          <button class="btn">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+    
+        <div class="user-actions">
+          <ul>
+            <li class="dropdown">
+              <a href="#"><i class="fa fa-user"></i> Tài khoản</a>
+              <ul class="dropdown-menu">
+                <li><a href="login.html">Đăng Nhập</a></li>
+                <li><a href="login.html">Đăng Ký</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="cart" style="position: relative;">
+            <a href="GioHang.html">
+              <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng
+              <span id="cart-count" class="cart-count">0</span>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    </section>
+    <div id="content">
+      <div id="slide-show">
+        <div class="slide-container">
+          <img class="slide-image" src="./slide_1.jpg" alt="Slide Image" />
+          <div class="slide-controls">
+            <img
+              class="arrow left-arrow"
+              src="images/left.png"
+              alt="Left Arrow"
+              onclick="com_back()"
+            />
+            <img
+              class="arrow right-arrow"
+              src="images/right.png"
+              alt="Right Arrow"
+              onclick="next()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/javascript/animation.js"></script> 
+    <div class="tieude">
+      <h2>Sản Phẩm MỚI</h2>
+  </div>
+    <ul class="SanPhamMoi">
+      <li>
+        <img src="london.png" alt="" />
+        <div class="content">
+          <span>
+            <h2>Châu Âu</h2>
+            <p>
+              áo len mỏng đơn giản được nhiều thương hiệu bình dân và trung cấp của châu Âu, châu Á lăng xê.
+               Thiết kế dễ phối, phù hợp với tất cả dáng người trong tiết trời xuân se lạnh.
+            </p>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <img src="Nhat.png" alt="" />
+        <div class="content">
+          <span>
+            <h2>Nhật Bản</h2>
+            <p>
+              Áo khoác lửng không cổ kiểu Chanel được xếp vào nhóm mặt hàng bán chạy ở các shop thời trang khi liên tục xuất hiện trên các nền tảng điện tử. 
+              Không chỉ mua đồ mới, nhiều người còn săn đồ cũ của Nhật Bản và Hàn Quốc để sở hữu những thiết kế độc, dựng phom đẹp
+            </p>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <img src="6e2f63e9-c27a-467a-8bd1-30185d51fe2a.png" alt="" />
+        <div class="content">
+          <span>
+            <h2>Paris</h2>
+            <p>
+              Xu hướng hot còn có áo khoác dáng dài đơn giản.
+               Kiểu áo phù hợp với những người có vóc dáng mảnh mai, chiều cao tương đối. 
+            </p>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <img src="ChatGPT Image 22_35_00 22 thg 4, 2025.png" alt="" />
+        <div class="content">
+          <span>
+            <h2>Tokyo</h2>
+            <p>
+              Diện cả bộ len mỏng được nhiều người yêu thích vì tiện lợi, không tốn thời gian nghĩ cách phối khi vội đi làm sáng sớm.
+               Một bộ váy áo trên các sàn điện tử có giá từ 350.000 đến 650.000 đồng tùy chất lượng. 
+            </p>
+          </span>
+        </div>
+      </li>
+    </ul>
+
+    <!-- flash sale -->
+    <div class="container">
+      <div class="tieude">
+        <h2>FLASH SALE</h2>
+    </div>
+      <div class="timer">07:36:50</div>
+
+      <div class="sale-options">
+        <div class="sale-option deal">
+          <img src="/flashSale/fs41.jpg" width="300px" height="60px" alt="" />
+        </div>
+        <div class="sale-option flash">
+          <img src="/flashSale/fs42.jpg" width="300px" height="60px" alt="" />
+        </div>
+        <div class="sale-option freeship">
+          <img src="flashSale/fs43.jpg" width="300px" height="60px" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Sản Phẩm Sale  -->
+   
+   
+   <div class="BanChay">
+  <div class="tieude">
+    <h2>Sản phẩm đang giảm giá</h2>
+  </div>
+  <div class="sanphams">
+    <div class="sanpham">
+      <div class="image-container">
+        <img src="images/SanPhamSale/1.webp" alt="Áo thô trắng SM16662">
+        <div class="overlay">
+          <button class="view-more"><a href="/flashSale/1.html">XEM THÊM</a></button>
+        </div>
+      </div>
+      <p class="product-name">ĐẦM TIỆC NHUNG ĐỎ D08662</p>
+      <p class="price">
+        <b>699,500₫</b>
+        <span class="price-old">1,399,000₫</span>
+      </p>
+    </div>
+
+    <div class="sanpham">
+      <div class="image-container">
+        <img src="/images/SanPhamSale/2.webp" alt="Áo thô trắng SM16662">
+        <div class="overlay">
+          <button class="view-more"><a href="/flashSale/2.html">XEM THÊM</a></button>
+        </div>
+      </div>
+      <p class="product-name">ÁO DÀI IN HOA AD08142</p>
+      <p class="price">
+        <b>849,500₫</b>
+        <span class="price-old">1,699,000₫</span>
+      </p>
+    </div>
+
+    <div class="sanpham">
+      <div class="image-container">
+        <img src="images/SanPhamSale/3.webp" alt="Áo thô trắng SM16662">
+        <div class="overlay">
+          <button class="view-more">XEM THÊM</button>
+        </div>
+      </div>
+      <p class="product-name">ĐẦM KẺ CỔ BẺ D02012</p>
+      <p class="price">
+        <b>479,700₫ </b>
+        <span class="price-old">1,599,000₫</span>
+      </p>
+    </div>
+
+    <div class="sanpham">
+      <div class="image-container">
+        <img src="/flashSale/aothotrang.png" alt="Áo thô trắng SM16662">
+        <div class="overlay">
+          <button class="view-more">XEM THÊM</button>
+        </div>
+      </div>
+      <p class="product-name">ÁO THÔ TRẮNG SM16662</p>
+      <p class="price">
+        <b>279,700₫ </b>
+        <span class="price-old">1,599,000₫</span>
+      </p>
+    </div>
+  </div>
+  
+</div>
+   
+<div class="view-all">Xem Tất Cả</div>
+</div>
+
+<div class="BanChay">
+  <div class="tieude">
+      <h2>Sản Phẩm Bán Chạy</h2>
+  </div>
+  <div class="sanphams">
+      <div class="sanpham">
+          <div class="image">
+              <img src="https://product.hstatic.net/200000182297/product/10_a9fa3f3e4a404f829f751073d9f56d43_1024x1024.jpg" alt="">
+          </div>
+          <div class="namePrice">
+              <h3>CHÂN VÁY BÚT CHÌ Z42732</h3>
+              <span>499,000₫</span>
+          </div>
+          <p>Chất liệu: vải thô
+            Kiểu dáng: chân váy thiết kế bút chì dài qua gối, tone màu đen trơn</p>
+          <div class="bottom-row">
+              <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="buy">
+                <a href="#" class="a-them"
+                  data-id="SP8"
+                  data-name="CHÂN VÁY BÚT CHÌ Z42732"
+                  data-price="499000"
+                  data-img="https://product.hstatic.net/200000182297/product/10_a9fa3f3e4a404f829f751073d9f56d43_1024x1024.jpg">
+                  <b><button>Buy Now</button></b>
+                </a>
+               
+              </div>
+          </div>
+          
+      </div>
+      <div class="sanpham">
+          <div class="image">
+              <img src="https://product.hstatic.net/200000182297/product/11_c821d51146e546cbaf8c605697cb7a74_1024x1024.jpg" alt="">
+          </div>
+          <div class="namePrice">
+              <h3>ĐẦM VOAN HOA D42512</h3>
+              <span>531,000₫</span>
+          </div>
+          <p>Chất liệu: vải voan
+            Kiểu dáng: đầm thiết kế dáng chữ A dài qua gối, cổ phối bèo, kêt hợp họa tiết hoa tone màu hồng nhạt.</p>
+          <div class="bottom-row">
+              <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="buy">
+                <a href="#" class="a-them"
+                  data-id="SP7"
+                  data-name="ĐẦM VOAN HOA D42512"
+                  data-price="531000"
+                  data-img="https://product.hstatic.net/200000182297/product/11_c821d51146e546cbaf8c605697cb7a74_1024x1024.jpg">
+                  <b><button>Buy Now</button></b>
+                </a>
+               
+              </div>
+          </div>
+          
+      </div>
+      <div class="sanpham">
+          <div class="image">
+              <img src="https://product.hstatic.net/200000182297/product/10_47203835b0064b44ae1d651c98d0a77f_1024x1024.jpg" alt="">
+          </div>
+          <div class="namePrice">
+              <h3>ĐẦM REN CỔ NGỌC D42712</h3>
+              <span>759,000₫</span>
+          </div>
+          <p>Chất liệu: vải ren
+            Kiểu dáng: đầm thiết kế dáng chữ A dài qua gối, tay bồng, tone màu trắng kem, cổ đính ngọc
+            </p>
+          <div class="bottom-row">
+              <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="buy">
+                <a href="#" class="a-them"
+                  data-id="SP6"
+                  data-name="ĐẦM REN CỔ NGỌC D42712"
+                  data-price="759000"
+                  data-img="https://product.hstatic.net/200000182297/product/10_47203835b0064b44ae1d651c98d0a77f_1024x1024.jpg">
+                  <b><button>Buy Now</button></b>
+                </a>
+               
+              </div>
+          </div>
+          
+      </div>
+      <div class="sanpham">
+          <div class="image">
+              <img src="https://product.hstatic.net/200000182297/product/5_7c48d76a561a40dfa59242943ecdcf06_1024x1024.jpg" alt="">
+          </div>
+          <div class="namePrice">
+              <h3>CHÂN VÁY MIDI Z42722
+              </h3>
+              <span>599,000₫</span>
+          </div>
+          <p>Chất liệu: vải thô
+            Kiểu dáng: ​chân váy thiết kế dáng chữ A, dài qua gối, tone màu đen trơn
+            </p>
+          <div class="bottom-row">
+              <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+             
+                <div class="buy">
+                  <a href="#" class="a-them"
+                    data-id="SP5"
+                    data-name="CHÂN VÁY MIDI Z42722"
+                    data-price="19000000"
+                    data-img="https://product.hstatic.net/200000182297/product/5_7c48d76a561a40dfa59242943ecdcf06_1024x1024.jpg">
+                    <b><button>Buy Now</button></b>
+                  </a>
+                 
+                </div>
+            
+                  <!-- <button>Buy Now</button> -->
+              </div>
+          </div>
+          
+      </div>
+      
+  </div>
+  
+</div>
+<div class="view-all">Xem Tất Cả</div>
+</div>
+ 
+
+    <script src="JS/btn_sp.js"></script>
+    <div id="Laptop_VP">
+      <div class="tieude">
+        <h2>GỢI Ý DÀNH CHO BẠN</h2>
+    </div>
+      <div class="row">
+        <div class="VP2 SP_VP">
+          <div class="bg_sp">
+            <a href="" class="img-baosp"
+              ><img src="QuanAo/10243ff4-0c2e-4344-bf07-97c4655675a9.png" alt="thinkbook"
+            /></a>
+            <a href="" class="text-sp"
+              ><b>
+                Áo Khoác Dù Trượt Nước Thêu 3D Logo 4M Form Regular AK069 Màu Rêu</b
+              ></a
+            >
+            <p class="price">
+              <b>319.000 ₫</b>
+              <span class="price-old">445.000 ₫</span>
+            </p>
+            <div class="ab">
+              <div class="thongso">
+                <p>
+                  Áo Khoác Dù Trượt Nước Thêu 3D Logo 4M Form Regular AK069 <br>
+                  Thông tin sản phẩm: <br>
+                  - Mã sản phẩm: AK069 <br>
+                  - Chất liệu: Dù (100% poly) <br>
+                  - Họa tiết: Thêu <br>
+                  - Form: Regular <br>
+                  - Màu: Đen / Rêu
+                </p>
+              </div>
+              <div class="btn_sp">
+                <a href="#" class="a-them"
+                  data-id="SP4"
+                  data-name="Áo Khoác Dù Trượt Nước"
+                  data-price="319000"
+                  data-img="/QuanAo/10243ff4-0c2e-4344-bf07-97c4655675a9.png">
+                  <b><i class="fa-solid fa-cart-plus"></i></b>
+                </a>
+                <a href="giohang.html" class="a-ct">Xem Giỏ Hàng</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+  
+       
+     
+        <div class="VP2 SP_VP">
+          <div class="bg_sp">
+            <a href="" class="img-baosp"
+              ><img src="QuanAo/22aa80a6-882a-4571-b43e-281bc697ebeb.png" alt="thinkbook"
+            /></a>
+            <a href="" class="text-sp"
+              ><b>
+                Quần Tây Sidetab Hai Bên Slimfit Trơn QT067 Màu Nâu</b
+              ></a
+            >
+            <p class="price">
+              <b>299,000</b>
+              <span class="price-old">499,000</span>
+            </p>
+            <div class="ab">
+              <div class="thongso">
+                <p>
+                  Thông tin sản phẩm:<br />
+
+                  - Mã sản phẩm: QT065 <br />
+
+                  - Chất liệu: 100% Poly<br />
+
+                  - Họa tiết: Trơn <br>
+                  - Form: Slimfit <br>
+                  - Màu: Be / Nâu Nhạt / Đen (ánh xanh)
+                </p>
+              </div>
+              <div class="btn_sp">
+                <a href="#" class="a-them"
+                  data-id="SP3"
+                  data-name="Áo Khoác Dù Trượt Nước"
+                  data-price="299000"
+                  data-img="/QuanAo/22aa80a6-882a-4571-b43e-281bc697ebeb.png">
+                  <b><i class="fa-solid fa-cart-plus"></i></b>
+                </a>
+                <a href="giohang.html" class="a-ct">Xem Giỏ Hàng</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="VP3 SP_VP">
+          <div class="bg_sp">
+            <a href="" class="img-baosp"
+              ><img src="/QuanAo/7eec2021-a7b8-4344-a26c-8e4efbd4ab51.png" alt="thinkbook"
+            /></a>
+            <a href="" class="text-sp"
+              ><b>
+                Áo Thun In Logo Tròn 4M Form Slimfit AT161 Màu Trắng
+              </b></a
+            >
+            <p class="price">
+              <b>199,000</b>
+              <span class="price-old">250,000</span>
+            </p>
+            <div class="ab">
+              <div class="thongso">
+                <p>
+                  Thông tin sản phẩm: <br>
+- Mã sản phẩm: AT161 <br>
+- Chất liệu: Thun Single Jersey <br> 
+- Họa tiết: In <br>
+- Form: Slimfit <br>
+- Màu: Trắng/ Đen/ Xanh đen / Xanh Đá/ Xám/ Nâu Nhạt/ Hồng <br> 
+                </p>
+              </div>
+              <div class="btn_sp">
+                <a href="#" class="a-them"
+                  data-id="SP2"
+                  data-name="Áo Khoác Dù Trượt Nước"
+                  data-price="19000000"
+                  data-img="/QuanAo/22aa80a6-882a-4571-b43e-281bc697ebeb.png">
+                  <b><i class="fa-solid fa-cart-plus"></i></b>
+                </a>
+                <a href="giohang.html" class="a-ct">Xem Giỏ Hàng</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="VP4 SP_VP">
+          <div class="bg_sp">
+            <a href="" class="img-baosp"
+              ><img src="/QuanAo/eca307c5-3165-4f84-ade4-b1ceb86cbeb3.png" alt="thinkbook"
+            /></a>
+            <a href="" class="text-sp"
+              ><b>
+                Quần Tây Sidetab Gắn Dây 3 Sọc Form Slimfit QT065 Màu Đen
+              </b></a
+            >
+            <p class="price">
+              <b>369,000</b>
+              <span class="price-old">425,000</span>
+            </p>
+            <div class="ab">
+              <div class="thongso">
+                <p>
+                  Thông tin sản phẩm:<br />
+
+                  - Mã sản phẩm: QT065 <br />
+
+                  - Chất liệu: 100% Poly<br />
+
+                  - Họa tiết: Trơn <br>
+                  - Form: Slimfit <br>
+                  - Màu: Be / Nâu Nhạt / Đen (ánh xanh)
+                </p>
+              </div>
+              <div class="btn_sp">
+                <a href="#" class="a-them"
+                  data-id="SP1"
+                  data-name="Áo Khoác Dù Trượt Nước"
+                  data-price="19000000"
+                  data-img="/QuanAo/22aa80a6-882a-4571-b43e-281bc697ebeb.png">
+                  <b><i class="fa-solid fa-cart-plus"></i></b>
+                </a>
+                <a href="giohang.html" class="a-ct">Xem Giỏ Hàng</a>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        </div><div class="view-all">Xem Tất Cả</div>
+      </div>
+      
+    </div>
+    <section class="fashion-blog">
+      <h2 class="blog-title">KAITO KID BLOG</h2>
+      <p class="blog-subtitle">ĐÓN ĐẦU XU HƯỚNG, ĐỊNH HÌNH PHONG CÁCH</p>
+    
+      <div class="blog-slider">
+        <div class="blog-item">
+          <img src="https://file.hstatic.net/200000182297/article/artboard_1_copy__1__aa69b8d2ca9843b7b5dcdc715573a71e_large.png" alt="Blooming Charm" />
+          <p class="blog-caption">BLOOMING CHARM</p>
+        </div>
+        <div class="blog-item">
+          <img src="https://file.hstatic.net/200000182297/article/artboard_1__1__2686dea53ed448e69a82ae1ad7abb682_large.png" alt="Chất liệu lụa" />
+          <p class="blog-caption">THANH LỊCH - QUÝ PHÁI CÙNG CHẤT LIỆU LỤA</p>
+        </div>
+        <div class="blog-item">
+          <img src="https://file.hstatic.net/200000182297/article/342544079_185591394364106_3474506149512152400_n__1__7b5ebc8e82e84130a3effdf0c7599fa1_large.jpg" alt="Minimal Chic" />
+          <p class="blog-caption">MINIMAL CHIC</p>
+        </div>
+      </div>
+    </section>
+    
+  
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Giới thiệu</h3>
+          <a href="#">Giới thiệu</a>
+          <a href="#">Liên hệ</a>
+          <a href="#">Tuyển dụng</a>
+          <a href="#">Tin tức</a>
+          <p>Email : kaitokid@gmail.com</p>
+          <span>Hotline : 0906264126</span>
+        </div>
+
+        <div class="footer-column">
+          <h3>Hỗ trợ khách hàng</h3>
+          <a href="#">Hướng dẫn đặt hàng</a>
+          <a href="#">Hướng dẫn chọn size</a>
+          <a href="#">Câu hỏi thường gặp</a>
+          <a href="#">Chính sách khách hàng VIP</a>
+          <a href="#">Thanh toán - Giao hàng</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Hệ thống cửa hàng</h3>
+          <div id="map"></div>
+          <!-- You can integrate a map here -->
+          <a href="#">Tìm địa chỉ cửa hàng gần bạn</a>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29814.440691130083!2d106.1463321!3d20.920160099999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a29bd88fe4d3%3A0xae2d7685eca0b553!2zQ-G6p3UgU-G6t3Q!5e0!3m2!1svi!2s!4v1740448302515!5m2!1svi!2s"
+            style="width: 80%; height: 150px"
+          ></iframe>
+        </div>
+
+        <div class="footer-column">
+          <h3>Kết nối với Kaito Kid Shop</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com/KaitooKidd.1412" target="_blank">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.youtube.com/@Kuroba_Kaito_GM" target="_blank">
+              <i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://www.tiktok.com/@kurobaa_kaitoo" target="_blank">
+              <i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a href="https://www.instagram.com/kaitoo.kidd1412" target="_blank">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <h3>Đăng ký nhận email khuyến mãi</h3>
+      <div class="newsletter">
+        <input type="email" placeholder="Email của bạn" />
+        <button type="button">Đăng ký</button>
+      </div>
+    </footer>
+    <!--footer  -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.getElementById("mobile-toggle");
+        const menu = document.querySelector(".menu-1");
+    
+        toggleButton.addEventListener("click", function () {
+          menu.classList.toggle("active");
+        });
+      });
+    </script>
+    
+   
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let totalItems = 0;
+        cart.forEach(item => {
+          totalItems += item.quantity;
+        });
+    
+        const countElement = document.getElementById("cart-count");
+        if (totalItems > 0) {
+          countElement.textContent = totalItems;
+        } else {
+          countElement.style.display = "none"; // Ẩn nếu không có sản phẩm
+        }
+      });
+    </script>
+    
+    
+  </body>
+</html>
